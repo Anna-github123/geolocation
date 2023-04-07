@@ -790,16 +790,29 @@ tr:nth-child(even) {
     margin-top: 45px;
 }
 
-/* media query adaptable to different devices*/
+@media (max-width: 768px) {
+    header {
+        height: auto;
+    }
+}
 
-/*Small devices*/
-@media (min-width: 768px) and (max-width: 991px) {
-	.bg-video {
-        width: 100%;
+@media (max-width: 768px) {
+    .description-container .row {
+        padding: 10px;
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .background-video {
+        height: auto !important;
+        min-width: 100%;
     }
 
     .bg-video-text {
-        width: 100%;
+        width: 90%;
+        font-size: 20px;
+        padding: 10px;
     }
 
     .bg-video-text h1 {
@@ -813,9 +826,43 @@ tr:nth-child(even) {
     }
 }
 
-/*Medium devices*/
-@media (min-width: 992px) and (max-width: 1199px) {
-	nav {
-		margin-left: 20% !important;
-	}
+@media only screen and (max-width: 768px) {
+    /* reduce the height of the image on smaller screens */
+    .carousel-inner img {
+      height: 20rem;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    /* make the image full width on extra small screens */
+    .carousel-inner img {
+      max-width: 100%;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+    .col-lg-6 {
+        font-size: 16px;
+        padding: 10px 12px 10px 12px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .col-lg-6 {
+        font-size: 14px;
+        padding: 8px 10px 8px 10px;
+    }
+}
+
+/* media query for even smaller screens */
+@media only screen and (max-width: 576px) {
+    .search-container {
+        padding: 2%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .search-container {
+        padding: 2%;
+    }
 }
