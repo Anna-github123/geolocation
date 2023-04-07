@@ -322,9 +322,13 @@ header {
 
 .col-lg-6 {
     font-size: 18px;
-    padding: 15px 18px 15px 18px;
     overflow: hidden;
     font-family: 'Calibri';
+    margin-bottom: 1%;
+}
+
+.but {
+    margin-bottom: 1%;
 }
 
 .col-6 {
@@ -788,10 +792,6 @@ tr:nth-child(even) {
 
 @media only screen and (max-width: 600px) {
 
-    header {
-        width: 100%;
-        margin: 0;
-    }
 
     .description-container .row {
         padding: 10px;
@@ -832,17 +832,60 @@ tr:nth-child(even) {
     }
 
     .search-container {
-        padding: 5%;
+        padding: 8%;
+    }
+
+
+    .col-lg-6 {
+        font-size: 14px;
+        padding: 8px 10px 8px 10px;
+    }
+
+    #map-col {
+        width: 100%;
+    }
+
+    @media only screen and (max-width: 400px) {
+
+        .table,
+        .th,
+        .tr {
+            display: block;
+        }
+
+        .tr {
+            width: 100%;
+        }
+    }
+
+}
+
+/* media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .search-container {
+        padding: 2%;
     }
 
     #search-id .search-wrapper {
         max-width: 90%;
-        margin-bottom: 10px;
+        margin-bottom: px;
     }
 
     #search-rec {
         min-width: 90%;
         max-height: 150px;
+    }
+}
+
+/* media query for even smaller screens */
+@media only screen and (max-width: 576px) {
+    .search-container {
+        padding: 8%;
+    }
+
+    #search-id .search-wrapper {
+      
+        border-radius: 10px;
     }
 
     #search-id .search-wrapper input {
@@ -857,18 +900,4 @@ tr:nth-child(even) {
     #search-rec li {
         font-size: 14px;
     }
-
-    table {
-        max-width: 100%;
-    }
-
-    .col-lg-6 {
-        font-size: 14px;
-        padding: 8px 10px 8px 10px;
-    }
-
-    #map-col {
-        width: 100%;
-    }
-
 }

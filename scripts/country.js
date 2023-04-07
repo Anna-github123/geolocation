@@ -57,8 +57,6 @@ countryInp.addEventListener('keydown', (event) => {
     }
 })
 
-
-
 // add event listener on the countryInp element, to enable search functionality, clickabe action
 countryInp.addEventListener('input', (event) => {
     const value = event.target.value.toUpperCase();
@@ -86,8 +84,8 @@ const boxes = document.querySelectorAll('ul li');
 boxes.forEach(box => {
     box.addEventListener('click', (event)=>{
         const value=event.target.firstChild.data
-        //console.log(value.data)
-        searchBtn.innerHTML=value;
+        // console.log(value.data)
+        // searchBtn.innerHTML=value;
         searchCountry(value)
     }
     );
