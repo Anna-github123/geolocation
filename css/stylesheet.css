@@ -1,13 +1,15 @@
 * {
-    margin: 0;
+    /* margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; */
 }
 
 body {
-    overflow-x: hidden;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: auto;
 }
 
 /*-------------------------------
@@ -94,7 +96,7 @@ header {
 }
 
 .navbar-light .navbar-toggler {
-    border: 3px solid #fff;
+    border: 2px solid #fff;
 }
 
 /*-------------------------------
@@ -327,7 +329,6 @@ header {
 
 .col-sm-6 {
     font-size: 18px;
-    overflow: hidden;
     font-family: 'Calibri';
     margin-bottom: 1%;
 }
