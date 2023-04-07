@@ -104,7 +104,7 @@ header {
     width: 100%;
     min-width: 50rem;
     height: 650px !important;
-    overflow: hidden;
+    overflow-x: hidden;
     position: absolute;
     object-fit: cover;
     top: 0;
@@ -795,6 +795,7 @@ tr:nth-child(even) {
     .description-container .row {
         padding: 10px;
         margin-top: 3rem;
+        text-align: center;
     }
 
     #col-6,
@@ -830,7 +831,7 @@ tr:nth-child(even) {
     }
 
     .search-container {
-        padding: 2%;
+        padding: 5%;
     }
 
     #search-id .search-wrapper {
@@ -841,16 +842,6 @@ tr:nth-child(even) {
     #search-rec {
         min-width: 90%;
         max-height: 150px;
-    }
-
-    .search-container {
-        padding: 2%;
-    }
-
-    #search-id .search-wrapper {
-        max-width: 90%;
-        margin-bottom: 10px;
-        border-radius: 10px;
     }
 
     #search-id .search-wrapper input {
@@ -870,42 +861,15 @@ tr:nth-child(even) {
         max-width: 100%;
     }
 
-    td,
-    th {
-        font-size: 14px;
-        padding: 5px;
-    }
 
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
-@media only screen and (max-width: 768px) {
     .col-lg-6 {
         font-size: 14px;
         padding: 8px 10px 8px 10px;
     }
-}
 
-@media only screen and (max-width: 600px) {
-    .col-lg-6 {
-        font-size: 14px;
-        padding: 8px 10px 8px 10px;
+    #map-col {
+        width: 100%;
     }
-}
 
-@media only screen and (max-width: 576px) {
-    .col-lg-6 {
-        font-size: 14px;
-        padding: 6px 8px 6px 8px;
-    }
-}
-
-@media only screen and (max-width: 378px) {
-    .col-lg-6 {
-        font-size: 14px;
-        padding: 6px 8px 6px 8px;
-    }
 }

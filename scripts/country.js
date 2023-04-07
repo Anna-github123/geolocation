@@ -87,6 +87,7 @@ boxes.forEach(box => {
     box.addEventListener('click', (event)=>{
         const value=event.target.firstChild.data
         //console.log(value.data)
+        searchBtn.innerHTML=value;
         searchCountry(value)
     }
     );
