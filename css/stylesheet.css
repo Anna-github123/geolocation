@@ -100,15 +100,15 @@ header {
 ---------------------------------*/
 
 .background-video {
-    z-index: -1;
-    width: 100%;
-    min-width: 50rem;
-    height: 650px !important;
-    overflow-x: hidden;
     position: absolute;
     object-fit: cover;
     top: 0;
     left: 0;
+    z-index: -1;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    top:0; left:0;
 }
 
 /* these apply to the text on the background video */
@@ -199,7 +199,7 @@ header {
 
 .description-container #col-6 h1 {
     font-size: 1.5em;
-    margin-left: 6.25em;
+    margin-left: 5em;
     padding-bottom: 1em;
 }
 
@@ -789,10 +789,7 @@ tr:nth-child(even) {
 
     header {
         width: 100%;
-    }
-
-    .background-video {
-        max-width: 100%;
+        margin: 0;
     }
 
     .description-container .row {
