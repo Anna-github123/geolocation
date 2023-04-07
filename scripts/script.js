@@ -5,7 +5,7 @@ $(window).scroll(function () {
         $('.fixed-top').css('background', 'transparent');
         $('.nav-link').css('color', '#fff');
         $('nav').css('box-shadow', 'none');
-        $('.navbar-light .navbar-toggler-icon').css('background-image', '#fff');
+        $('.navbar-light .navbar-toggler-icon').css('background-color', '#fff');
         $('.navbar-light .navbar-toggler').css('border-color', '#fff');
     } else {
         $('.fixed-top').css('background', 'rgba(255, 255, 255)');

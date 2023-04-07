@@ -1,7 +1,7 @@
 * {
-    /* margin: 0;
+    margin: 0;
     padding: 0;
-    box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 body {
@@ -864,7 +864,7 @@ tr:nth-child(even) {
 /* media query for smaller screens */
 @media only screen and (max-width: 768px) {
     .search-container {
-        padding: 2%;
+        padding: 1%;
     }
 
     #search-id .search-wrapper {

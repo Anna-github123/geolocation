@@ -5,14 +5,13 @@ $(window).scroll(function () {
         $('.fixed-top').css('background', 'transparent');
         $('.nav-link').css('color', '#fff');
         $('nav').css('box-shadow', 'none');
-
-        $('.navbar-light .navbar-toggler-icon').css('background-image', '#fff');
+        $('.navbar-light .navbar-toggler-icon').css('background-color', '#fff');
         $('.navbar-light .navbar-toggler').css('border-color', '#fff');
     } else {
         $('.fixed-top').css('background', 'rgba(255, 255, 255)');
         $('.nav-link').css('color', '#000');
         $('nav').css('box-shadow', '0 0 10px 0');
-        $('.navbar-light .navbar-toggler-icon').css('background-image', 'firebrick');
+        $('.navbar-light .navbar-toggler-icon').css('background-color', 'firebrick');
         $('.navbar-light .navbar-toggler').css('border-color', 'firebrick');
     }
 });
@@ -69,7 +68,7 @@ countryInp.addEventListener('input', (event) => {
 
     for (let i = 0; i < countries.length; i++) {
         const li = document.createElement('li');
-        li.className='searchValue'
+        li.className = 'searchValue'
 
         li.innerText = countries[i]
         list.appendChild(li);
@@ -78,18 +77,18 @@ countryInp.addEventListener('input', (event) => {
 
     resultBox.append(list)
     console.log(list)
-    
-const boxes = document.querySelectorAll('ul li');
 
-boxes.forEach(box => {
-    box.addEventListener('click', (event)=>{
-        const value=event.target.firstChild.data
-        // console.log(value.data)
-        // searchBtn.innerHTML=value;
-        searchCountry(value)
-    }
-    );
-  });
+    const boxes = document.querySelectorAll('ul li');
+
+    boxes.forEach(box => {
+        box.addEventListener('click', (event) => {
+            const value = event.target.firstChild.data
+            // console.log(value.data)
+            // searchBtn.innerHTML=value;
+            searchCountry(value)
+        }
+        );
+    });
 
     console.log(list)
     console.log(countries)
@@ -337,7 +336,7 @@ function rates(capital, country_name) {
 window.onload = loaddata;
 
 // adds event listener 'click' to search for a country
-searchBtn.addEventListener('click', ()=>{
+searchBtn.addEventListener('click', () => {
     const country = countryInp.value
     searchCountry(country)
 });
