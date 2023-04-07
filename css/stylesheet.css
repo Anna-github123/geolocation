@@ -15,9 +15,11 @@ body {
 ---------------------------------*/
 
 header {
-    overflow-x: hidden;
     width: 100%;
     height: 40rem;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 #about-header {
@@ -108,7 +110,6 @@ header {
     overflow: hidden;
     height: 100%;
     width: 100%;
-    top:0; left:0;
 }
 
 /* these apply to the text on the background video */
