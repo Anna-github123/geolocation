@@ -792,7 +792,7 @@ tr:nth-child(even) {
     }
 
     .background-video {
-        width: 100%;
+        max-width: 100%;
     }
 
     .description-container .row {

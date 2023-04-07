@@ -5,13 +5,13 @@ $(window).scroll(function () {
         $('.fixed-top').css('background', 'transparent');
         $('.nav-link').css('color', '#fff');
         $('nav').css('box-shadow', 'none');
-        $('.navbar-light .navbar-toggler-icon').css('background-image', '#fff');
+        $('.navbar-light .navbar-toggler-icon').css('color', '#fff');
         $('.navbar-light .navbar-toggler').css('border-color', '#fff');
     } else {
         $('.fixed-top').css('background', 'rgba(255, 255, 255)');
         $('.nav-link').css('color', '#000');
         $('nav').css('box-shadow', '0 0 10px 0');
-        $('.navbar-light .navbar-toggler-icon').css('background-image', 'firebrick');
+        $('.navbar-light .navbar-toggler-icon').css('color', 'firebrick');
         $('.navbar-light .navbar-toggler').css('border-color', 'firebrick');
     }
 });
